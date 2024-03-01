@@ -2,7 +2,7 @@
 int  main(void)
 {
   int i;
-  int * p=&i;
+  int * p = &i;
   i=0;
   printf("%d\n",i);
   *p=20;

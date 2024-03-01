@@ -16,8 +16,10 @@ double hypotenuse(double base , double height )
   
   double Hypotenuse= sqrt(pow(base,2)+pow(height,2));
 
-  if(base!=0 && height!=0)
-  return Hypotenuse;
-
-  else return 1;
+  if(base!=0 && height!=0){
+    return Hypotenuse;
+  }
+  else {
+    return 1;
+  }
 }

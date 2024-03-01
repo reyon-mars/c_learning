@@ -17,10 +17,6 @@ void printWinner(char winner);
 
 int main()
 {
-  char response = ' ';
-
-  do
-  {
     char winner = ' ';
     resetBoard();
     while (winner == ' ' && checkFreeSpaces() != 0)
@@ -40,15 +36,8 @@ int main()
       }
       printBoard();
       printWinner(winner);
-      printf("Would you like to play again? (Y/N)");
-      scanf("%c", &response);
-      response = toupper(response);
     }
-    }
-    while (response != 'N');
-
-    return 0;
-  
+  return 0;
 }
 
 void resetBoard()
@@ -167,6 +156,6 @@ void printWinner(char winner)
   }
   else
   {
-    printf("Nobody wins !!!");
+    printf("Nobody wins ! It is a draw. ");
   }
 }

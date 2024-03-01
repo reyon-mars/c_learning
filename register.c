@@ -1,11 +1,15 @@
+#include<stdio.h>
+int exponent(int base ,int power);
 
+int main(void){
+  printf("%d", exponent(2,7));
+}
 
-int exponents(int a ,int b)
+int exponent(int base ,int power)
 {
-  register int  res=1;
-  int i;
-  for(i=1;i<=b;i++){
-    res=res*a;
+  register int res=1;
+  for(int i=0; i<power; i++){
+    res=res*base;
   }
   return res;
 }

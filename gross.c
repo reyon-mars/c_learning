@@ -1,8 +1,9 @@
 #include<stdio.h>
+
 float gross(float salary);
+
 int main()
 {
-
   float salary1=gross(100);
   printf("%f",salary1);
 }

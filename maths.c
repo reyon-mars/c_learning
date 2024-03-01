@@ -14,13 +14,9 @@ int main(void)
   G= log(16);
   H = sin(29);
 
-
   printf("%lf , %lf , %lf , %lf, %lf ,%d,%lf,%lf",A,B,C,D,E,F,G,H);
 
-
   return 0;
-
-
 }
 
 

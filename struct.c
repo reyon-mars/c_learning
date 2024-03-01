@@ -8,17 +8,13 @@ struct MyStruct {
   int age;
 };
 
-
 int main()
 
 {
   struct MyStruct  student1;
   student1.age=20;
-   strcpy(student1.name,"Roni Rana Magar");
-
-
+  strcpy(student1.name,"Roni Rana Magar");
   printf("%s",student1.name);
-
 
   return 0;
 }

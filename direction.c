@@ -3,8 +3,6 @@ void go_south_east(int * lat ,int * lon)
 {
   lat= lat - 1;
   lon = lon + 1;
-  
-
 }
 
 int main(void){
@@ -14,5 +12,4 @@ int main(void){
   printf("%i , %i ",latitude , longitude);
 
   return 0;
-
 }

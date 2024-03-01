@@ -18,5 +18,4 @@ int main (void)
   printf("%c",toupper(string2[i]));
   }
   return 0;
-
 }
