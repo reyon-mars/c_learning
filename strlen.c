@@ -8,7 +8,7 @@ int myStrLen(char * string)
   return count;
 }
 int main(void){
-  char * name ="Roni Rana";
+  char * name ="Roni Rana is beautiful";
   printf("%d",myStrLen(name));
   return 0;
 }
