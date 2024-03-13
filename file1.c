@@ -3,9 +3,11 @@
 int main(void){
 
   FILE *fp;
+  int c;
   fp = fopen("hello.txt","r");
-  int c =fgetc(fp);
-  printf("%c\n",c);
+ while ((c=fgetc(fp))!=EOF) {
+  printf("%c",c);
+  }
   fclose(fp);
   return 0;
 }
