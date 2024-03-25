@@ -9,7 +9,9 @@ int mystrlen(char * s)
   return p-s;
 }
 int main(void){
+
+  char name_[]="roni magar";
   char * name="roni rana magar";
-  printf("%d",mystrlen(name));
+  printf("%d ,%d",mystrlen(name),mystrlen(name_));
   return 0;
 }
