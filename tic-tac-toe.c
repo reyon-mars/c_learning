@@ -17,26 +17,26 @@ void printWinner(char winner);
 
 int main()
 {
-    char winner = ' ';
-    resetBoard();
-    while (winner == ' ' && checkFreeSpaces() != 0)
+  char winner = ' ';
+  resetBoard();
+  while (winner == ' ' && checkFreeSpaces() != 0)
+  {
+    printBoard();
+    playerMove();
+    winner = checkWinner();
+    if (winner != ' ' || checkFreeSpaces() == 0)
     {
-      printBoard();
-      playerMove();
-      winner = checkWinner();
-      if (winner != ' ' || checkFreeSpaces() == 0)
-      {
-        break;
-      }
-      computerMove();
-      winner = checkWinner();
-      if (winner != ' ' || checkFreeSpaces() == 0)
-      {
-        break;
-      }
-      printBoard();
-      printWinner(winner);
+      break;
     }
+    computerMove();
+    winner = checkWinner();
+    if (winner != ' ' || checkFreeSpaces() == 0)
+    {
+      break;
+    }
+    printBoard();
+    printWinner(winner);
+  }
   return 0;
 }
 
@@ -53,7 +53,7 @@ void resetBoard()
 }
 void printBoard()
 {
-  printf("\t %c | %c | %c ", board[0][0], board[0][1], board[0][2]);
+  printf("\n\t %c | %c | %c ", board[0][0], board[0][1], board[0][2]);
   printf("\n\t---|---|---\n");
   printf(" \t %c | %c | %c ", board[1][0], board[1][1], board[1][2]);
   printf("\n\t---|---|--- \n");
