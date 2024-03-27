@@ -12,6 +12,7 @@ int factorial(int n){
 int main(void){
 
   int userInput;
+  
   printf("Please enter a number: ");
   scanf("%d",&userInput);
   printf("The value of %d! is %d",userInput,factorial(userInput));
