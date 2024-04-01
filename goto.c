@@ -15,7 +15,7 @@ int main()
   }
   
 sos:
-  printf("To you i say ! kneel before god");
+  printf("\a\a\aTo you i say ! kneel before god \a \a \a \a");
 
 return 0;
 }
