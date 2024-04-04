@@ -148,7 +148,7 @@ int parse_expression(Lexer* lexer) {
 }
 
 int main() {
-    const char* input = "2 + (3 * 4) - 6 / 2";
+    const char* input = "2 +  3 * 2 + (3 * 4) - 6 / 2";
     Lexer lexer;
     lexer_init(&lexer, input);
 

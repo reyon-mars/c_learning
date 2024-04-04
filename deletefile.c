@@ -1,13 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
-  if(remove("test.txt")==0){
-    
-    printf("the file has been deleted");
-
+  if (remove("test.txt") == 0)
+  {
+    printf("The file has been deleted");
   }
-  else 
-    printf("the file was not found");
+  else
+    printf("The file was not found");
 
   return 0;
 }
