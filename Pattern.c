@@ -1,10 +1,25 @@
 #include <stdio.h>
 
+void butterfly(int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; i++)
+		{
+			if()
+		}
+		
+	}
+	
+}
+
 void floydsTriangle(int height)
 {
-	int digit=1;
-	for (int i = 0; i < height; i++){
-		for (int j = 0; j <= i; j++){
+	int digit = 1;
+	for (int i = 0; i < height; i++)
+	{
+		for (int j = 0; j <= i; j++)
+		{
 			printf("%d  ", digit);
 			digit++;
 		}
