@@ -8,17 +8,16 @@ int*  insertion_sort( int array[] , size_t arraylen);
 
 int main ( void ){
 
-  int array[]= {9,8,7,6,4,5,3,2,1};
-  int arraylen = sizeof(array)/sizeof(array[0]);
+  int array[]= { 1, 9, 2, 8, 3, 7, 4, 6, 5, 0};
+  int arraylen = sizeof( array ) / sizeof( int );
 
-  selection_sort(array,arraylen);
+  insertion_sort( array , arraylen );
   
   for( int i = 0; i < arraylen; i++) { 
-    printf (" %d ", array[i] );
+    printf (" %d ", array[ i ] );
   }
   
  return 0;
-
 }
 
 int* bubble_sort( int array[] , int arraylen ){
