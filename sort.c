@@ -3,16 +3,18 @@
 
 int*  bubble_sort ( int array[] , int arraylen );
 int*  selection_sort ( int array[], size_t arraylen );
+int*  insertion_sort( int array[] , size_t arraylen);
+
 
 int main ( void ){
 
   int array[]= {9,8,7,6,4,5,3,2,1};
   int arraylen = sizeof(array)/sizeof(array[0]);
 
-  sort(array,arraylen);
+  selection_sort(array,arraylen);
   
   for( int i = 0; i < arraylen; i++) { 
-    printf ("%d\n", array[i] );
+    printf (" %d ", array[i] );
   }
   
  return 0;
@@ -44,10 +46,13 @@ int*  selection_sort ( int array[], size_t arraylen){
     index_of_smallest = i; 
 
     for( size_t j = i; j < arraylen; j++) {
-      if( array[j+1] < array[j]){
-        index_of_smallest = j+1;
+      if( array[ j ] < array[  index_of_smallest ]){
+        index_of_smallest = j;
       }
     }
+    int temp = array[index_of_smallest];
+    array[ index_of_smallest ] = array[ i ];
+    array[ i ] = temp; 
   }
   return array;
 }
