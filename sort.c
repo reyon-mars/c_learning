@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-int*  
+
 int*  bubble_sort ( int array[] , int arraylen );
 int*  selection_sort ( int array[], size_t arraylen );
 int*  insertion_sort( int array[] , size_t arraylen);
