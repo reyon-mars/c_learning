@@ -9,6 +9,7 @@ double farenhiteToCelcius(double temprature)
 { 
   return ((temprature - 32)* 5)/9;
 }
+
 int main (void){
   printf("%lf\n",celciusToFarenhite(10));
 
