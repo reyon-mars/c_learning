@@ -22,7 +22,6 @@ void copy( char * s1, char * s2 )
 		i++;
 }
 	
-
 int main( void )
 {
 	int len; 
