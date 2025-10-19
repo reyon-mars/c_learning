@@ -51,6 +51,7 @@ void resetBoard()
     }
   }
 }
+
 void printBoard()
 {
   printf("\n\t %c | %c | %c ", board[0][0], board[0][1], board[0][2]);
@@ -59,6 +60,7 @@ void printBoard()
   printf("\n\t---|---|--- \n");
   printf(" \t %c | %c | %c \n", board[2][0], board[2][1], board[2][2]);
 }
+
 int checkFreeSpaces()
 {
 
@@ -76,6 +78,7 @@ int checkFreeSpaces()
   }
   return freeSpaces;
 }
+
 void playerMove()
 {
   int x;
