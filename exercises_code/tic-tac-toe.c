@@ -102,6 +102,7 @@ void playerMove()
     }
   } while (board[x][y] == ' ');
 }
+
 void computerMove()
 {
   srand(time(0));
@@ -121,6 +122,7 @@ void computerMove()
     printWinner(' ');
   }
 }
+
 char checkWinner()
 {
   for (int i = 0; i < 3; i++)
@@ -147,6 +149,7 @@ char checkWinner()
   }
   return ' ';
 }
+
 void printWinner(char winner)
 {
   if (winner == PLAYER)
