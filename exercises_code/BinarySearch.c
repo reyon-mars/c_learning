@@ -22,7 +22,3 @@ int binary_search(int array[], int value, size_t length)
     }
     return 0;
 }
-int main()
-{
-    return 0;
-}
