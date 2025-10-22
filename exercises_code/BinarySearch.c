@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int binary_search(int array[], int value, size_t length)
+bool binary_search(int array[], int value, size_t length)
 {
     int lower_bound = 0, upper_bound = length - 1;
     while (lower_bound <= upper_bound)
@@ -9,7 +9,7 @@ int binary_search(int array[], int value, size_t length)
 
         if (array[midpoint] == value)
         {
-            return 1;
+            return true;
         }
         else if (value < array[midpoint])
         {
@@ -20,5 +20,5 @@ int binary_search(int array[], int value, size_t length)
             lower_bound = midpoint + 1;
         }
     }
-    return 0;
+    return false;
 }
