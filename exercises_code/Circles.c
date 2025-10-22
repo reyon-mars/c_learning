@@ -3,7 +3,7 @@
 
 #define pi 3.14159265
 
-double area(int radius);
+double area(double radius);
 double circumference(double radius);
 
 int main(int argc, char *argv[])
