@@ -4,10 +4,10 @@ void increment(int *a);
 
 int main(void)
 {
-  int i = 2;
+  int param = 2;
 
-  increment(&i);
-  printf("%d\n", i);
+  increment(&param );
+  printf("%d\n", param );
 
   return 0;
 }
