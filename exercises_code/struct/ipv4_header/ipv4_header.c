@@ -1,3 +1,5 @@
+#include <stdint.h>
+
 typedef struct iphdr 
 {
 	uint8_t version : 4;
@@ -12,4 +14,4 @@ typedef struct iphdr
 	uint16_t header_checksum;
 	uint32_t source_ip;
 	uint32_t dest_ip;
-} __attribute((packed))__ ipv4_header;
+} __attribute__((packed)) ipv4_header;
