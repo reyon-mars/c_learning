@@ -1,5 +1,7 @@
 #include<stdio.h>
+
 #define DECI 10
+
 int main (void)
 {
   int array[4];
