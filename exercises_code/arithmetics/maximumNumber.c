@@ -16,6 +16,7 @@ int MaximumNumber(int * array, int size)
 
 int main(void)
 {
+  
   int array[10]={1,43,5,23,5,64,74,45,23,67};
   int size= sizeof(array)/sizeof(int);
 
