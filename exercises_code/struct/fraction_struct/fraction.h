@@ -15,7 +15,7 @@ fraction_t multiply( const fraction_t* a, const fraction_t* b );
 fraction_t divide( const fraction_t* a, const fraction_t* b );
 
 void print_fraction( void );
-fraction_t normalize( int numerator, int denominator );
+fraction_t* normalize( fraction_t* frac );
 
 #endif
 
